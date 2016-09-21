@@ -10,7 +10,7 @@ brute: brute.o
 	g++ -std=c++11 brute.o -o brute
 
 brute.o:
-	g++ -std=c++11 -c brute.cpp
+	g++ -std=c++11 -c -Ofast brute.cpp
 
 clean:
 	rm *.o encrypt brute
